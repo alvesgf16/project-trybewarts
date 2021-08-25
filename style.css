@@ -1,8 +1,8 @@
-main , #evaluation-form {
+main , form {
   display: flex;
 }
 
-#evaluation-form {
+form {
   flex-direction: column;
   width: 675px;
 }
