@@ -56,3 +56,8 @@ main form {
 main img {
   height: 500px;
 }
+
+#evaluation-form {
+  display: flex;
+  margin: 50px;
+}
