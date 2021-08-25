@@ -29,6 +29,11 @@ body {
   border-radius: 5px;
 }
 
+#trybewarts-header-title {
+  align-self: center;
+  color: white;
+}
+
 main , form {
   display: flex;
 }
