@@ -1,12 +1,10 @@
-let loginBtn = document.querySelector('.login-button')
-let email = document.getElementById('email')
-let password = document.getElementById('password')
-loginBtn.addEventListener('click', alerta)
-
-function alerta(){
+const loginBtn = document.querySelector('.login-button');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+loginBtn.addEventListener('click', function () {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
-    alert("Olá, Tryber!")
-  } else{
-    alert("Email ou senha inválidos.")
+    alert('Olá, Tryber!');
+  } else {
+    alert('Email ou senha inválidos.');
   }
-}
+});
