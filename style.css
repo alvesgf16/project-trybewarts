@@ -30,15 +30,14 @@ body {
 }
 
 main , form {
-
   display: flex;
 }
 
-form {
+main form {
   flex-direction: column;
   width: 675px;
 }
 
-img {
+main img {
   height: 500px;
 }
