@@ -15,7 +15,7 @@ function createRatingOptions() {
   for (let index = 1; index <= 10; index += 1) {
     const rateOption = document.createElement('input');
     rateOption.type = 'radio';
-    rateOption.value = toString([index]);
+    rateOption.value = [index];
     rateOption.name = 'rate';
     rateOption.id = `option-${[index]}`;
 
@@ -25,6 +25,7 @@ function createRatingOptions() {
 
     rateDiv.appendChild(rateOption);
     rateDiv.appendChild(rateLabel);
+    console.log(rateOption);
   }
 }
 
