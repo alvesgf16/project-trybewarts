@@ -13,7 +13,7 @@ body {
 .trybewarts-login {
   display: flex;
   align-items: center;
-} 
+}
 
 .trybewarts-login input {
   padding: 10px;
@@ -30,15 +30,14 @@ body {
 }
 
 main , form {
-
   display: flex;
 }
 
-form {
+main form {
   flex-direction: column;
   width: 675px;
 }
 
-img {
+main img {
   height: 500px;
 }
