@@ -28,6 +28,20 @@ function createRatingOptions() {
   }
 }
 
+function enableSubmitButton() {
+  const agreementCheckbox = document.getElementById('agreement');
+  const submitButton = document.getElementById('submit-btn');
+
+  if (agreementCheckbox.checked) {
+    submitButton.removeAttribute('disabled');
+  } else {
+    submitButton.setAttribute('disabled', true);
+  }
+}
+
 window.onload = () => {
+  const agreementCheckbox = document.getElementById('agreement');
+
   createRatingOptions();
+  agreementCheckbox.addEventListener('change', enableSubmitButton);
 };
