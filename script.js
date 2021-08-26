@@ -40,9 +40,22 @@ function enableSubmitButton() {
   }
 }
 
+function addCounter() {
+  const counter = document.getElementById('counter');
+  const textArea = document.getElementById('textarea');
+
+  counter.innerText = 500;
+
+  textArea.addEventListener('keyup', () => {
+    counter.innerText = 500 - textArea.value.length;
+  });
+}
+
 window.onload = () => {
   const agreementCheckbox = document.getElementById('agreement');
 
   createRatingOptions();
   agreementCheckbox.addEventListener('change', enableSubmitButton);
+
+  addCounter();
 };
