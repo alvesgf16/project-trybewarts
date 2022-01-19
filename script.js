@@ -14,10 +14,11 @@ function createRatingOptions() {
 
   for (let index = 1; index <= 10; index += 1) {
     const rateOption = document.createElement('input');
-    rateOption.type = 'radio';
-    rateOption.value = [index];
-    rateOption.name = 'rate';
     rateOption.id = `option-${[index]}`;
+    rateOption.className = 'form-check-input rate-radio';
+    rateOption.type = 'radio';
+    rateOption.name = 'rate';
+    rateOption.value = [index];
 
     const rateLabel = document.createElement('label');
     rateLabel.setAttribute('for', `option-${index}`);
